@@ -1,5 +1,19 @@
 # 南邮本科生小程序代码更新日志
 
+## [0.0.6](https://github.com/Awen-hub/git-test/compare/0.0.5...0.0.6) (2022-01-02)
+
+### Features
+* **git:** 允许管理员强制提交  @[Awen-hub](https://github.com/Awen-hub), 2022-01-02 ([81afa08](https://github.com/Awen-hub/git-test/commit/81afa08fb24da90f1db08976d394614b701dbd4f))
+
+### Bug Fixes
+* **git:** 测试强制提交  @[Awen-hub](https://github.com/Awen-hub), 2022-01-02 ([3a3d13e](https://github.com/Awen-hub/git-test/commit/3a3d13e8cf45679952a6fd360eae439fb945d19e))
+* **git:** 测试保护分支  @[Awen-hub](https://github.com/Awen-hub), 2022-01-02 ([314e1a1](https://github.com/Awen-hub/git-test/commit/314e1a144716dd6f73b5b98d2204a72798e2b26f))
+* **ci:** 测试强制推送  @[Awen-hub](https://github.com/Awen-hub), 2022-01-02 ([3cfc708](https://github.com/Awen-hub/git-test/commit/3cfc708c62ee714fc32fef4896af5709a4d3dcd5))
+
+### Perf
+* **ci:** 测试强制推送代码  @[Awen-hub](https://github.com/Awen-hub)), 2022-01-02 ([ec85331](https://github.com/Awen-hub/git-test/commit/ec8533112f0bbe50748da2059f9358c65b5fad01))
+
+
 ## [0.0.5](https://github.com/Awen-hub/git-test/compare/0.0.4...0.0.5) (2022-01-02)
 
 
