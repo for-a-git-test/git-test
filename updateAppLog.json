@@ -1,5 +1,12 @@
 {
-  "data": [],
+  "data": [
+    {
+      "content": [
+        "修复ci问题"
+      ],
+      "title": "2022-01-02 新版本(V0.0.1)"
+    }
+  ],
   "errCode": null,
   "errMsg": null,
   "success": true
