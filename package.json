@@ -1,0 +1,24 @@
+{
+  "name": "git-test",
+  "version": "0.0.0",
+  "nextVersion": "0.0.1",
+  "description": "hello 1",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "add": "git add .",
+    "commit": "node commit.mjs",
+    "push": "node push.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^5.0.0",
+    "compare-versions": "^4.1.2",
+    "dayjs": "^1.10.7",
+    "gitlog-parser": "^0.0.4",
+    "husky": "^7.0.0",
+    "inquirer": "^8.2.0",
+    "parse-git-commit": "^0.1.3"
+  }
+}
