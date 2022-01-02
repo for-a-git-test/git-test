@@ -1,5 +1,11 @@
 # 南邮本科生小程序代码更新日志
 
+## [0.0.7](https://github.com/Awen-hub/git-test/compare/0.0.6...0.0.7) (2022-01-02)
+
+### Features
+* **git:** 删除强制推送白名单  @[Awen-hub](https://github.com/Awen-hub), 2022-01-02 ([e5ba561](https://github.com/Awen-hub/git-test/commit/e5ba561fb44661288d49640ff18ac4e8d463c226))
+
+
 ## [0.0.6](https://github.com/Awen-hub/git-test/compare/0.0.5...0.0.6) (2022-01-02)
 
 ### Features
