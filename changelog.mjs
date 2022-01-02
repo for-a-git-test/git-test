@@ -164,7 +164,7 @@ if (perfContent.length !== 0) {
 perfContent.forEach((content) => {
   const { author, date, scope, subject, hash, shortHash } = content;
   const frontContent = scope ? `* **${scope}:** ` : "*  ";
-  markdownLog += `${frontContent}${subject}  @${author}, ${date} ([${shortHash}](https://github.com/Awen-hub/git-test/commit/${hash}))\n`;
+  markdownLog += `${frontContent}${subject}  @[${author}](https://github.com/${author})), ${date} ([${shortHash}](https://github.com/Awen-hub/git-test/commit/${hash}))\n`;
 });
 
 const beforeLog = await readFile("CHANGELOG.md", { encoding: "utf-8" });

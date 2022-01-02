@@ -27,6 +27,6 @@ jobs:
         run: |
           git add .
           git commit -m "misc(log): 更新日志" -n
-          git push --set-upstream origin master --no-verify --tags
+          git push --set-upstream origin master -n --tags
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
