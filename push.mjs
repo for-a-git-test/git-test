@@ -120,7 +120,7 @@ const nowBranch = await new Promise((resolve) => {
 });
 
 await new Promise((resolve) => {
-  exec(`git push --set-upstream origin ${nowBranch} -n --tags`, (err, stdout) => {
+  exec(`git push --set-upstream origin ${nowBranch} --no-verify --tags`, (err, stdout) => {
     if (err) {
       log(chalk.red("push出错"));
       log(err);
