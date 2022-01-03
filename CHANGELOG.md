@@ -1,5 +1,11 @@
 # 南邮本科生小程序代码更新日志
 
+## [0.0.11](https://github.com/Awen-hub/git-test/compare/0.0.10...0.0.11) (2022-01-03)
+
+### Perf
+* **git:** 测试合并  @[Awen-hub](https://github.com/Awen-hub)), 2022-01-03 ([2533dd1](https://github.com/Awen-hub/git-test/commit/2533dd173181199f0fa0b57d33ee3e56371aa5c2))
+
+
 ## [0.0.10](https://github.com/Awen-hub/git-test/compare/0.0.9...0.0.10) (2022-01-02)
 
 ### Bug Fixes

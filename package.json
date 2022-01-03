@@ -1,6 +1,6 @@
 {
   "name": "git-test",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "nextVersion": "0.0.11",
   "description": "hello 1",
   "main": "index.js",
