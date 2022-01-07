@@ -48,7 +48,7 @@ const gitCommit = () =>
         if (err) {
           handleErr(err, "git commit执行出错");
         }
-        handleResolve(stdout, "git add . 执行成功", resolve);
+        handleResolve(stdout, "git commit执行成功", resolve);
       }
     );
   });

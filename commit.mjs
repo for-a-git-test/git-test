@@ -45,6 +45,7 @@ const promptList = [
     name: "subject",
     validate(val) {
       if (val === "") {
+        log(chalk.red("\n此项为必填项\n"));
         return false;
       }
       if (val.length >= 50) {
@@ -56,25 +57,45 @@ const promptList = [
   },
 ];
 
-inquirer.prompt(promptList).then(
-  (answers) =>
-    new Promise((resolve) => {
-      let { type, scope, subject } = answers;
-      if (scope !== "") {
-        scope = `(${scope})`;
+const handleErr = (err, message) => {
+  if (message !== "") {
+    log(chalk.red(message));
+  }
+  log(err);
+  process.exit(1);
+};
+
+const handleResolve = (stdout, message, resolve) => {
+  log(chalk.blue(message));
+  log(stdout);
+  resolve();
+};
+
+const gitAdd = () =>
+  new Promise((resolve) => {
+    exec("git add .", (err, stdout) => {
+      if (err) {
+        handleErr(err, "git add . 执行出错");
       }
-      exec(`git commit -m "${type}${scope}: ${subject}" -n`, (err, stdout) => {
+      handleResolve(stdout, "git add . 执行成功", resolve);
+    });
+  });
+
+const gitCommit = (type, scope, subject) =>
+  new Promise((resolve) => {
+    exec(
+      `git commit -m "${type}${scope}: ${subject}" -n`,
+      (err, stdout) => {
         if (err) {
-          log(chalk.red("\n提交失败\n"));
-          log(err);
-        } else {
-          console.log(chalk.blue("\n提交成功\n"));
-          log(stdout);
-          resolve();
+          handleErr(err, "git commit执行出错");
         }
-      });
-    })
-);
+        handleResolve(stdout, "git commit执行成功", resolve);
+      }
+    );
+  });
 
+const { type, scope, subject } = await inquirer.prompt(promptList)
 
+await gitAdd()
 
+await gitCommit(type, scope, subject)
