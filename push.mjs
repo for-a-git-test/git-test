@@ -26,7 +26,7 @@ const handleErr = (err, message) => {
 
 const handleResolve = (stdout, message, resolve) => {
   log(chalk.blue(message));
-  log(stdout);
+  console.log(stdout);
   resolve();
 };
 
@@ -77,7 +77,7 @@ const gitPush = (nowBranch) =>
       }
     );
   });
-  
+
 
 let promptList = [
   {
